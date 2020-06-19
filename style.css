@@ -1,105 +1,56 @@
-html {
-  overflow-y: scroll;
-}
-
 html, body {
-	background: #807e7a; /* Change to img, use as alt */
-	height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.topnav div {
-  float: right;
-}
-
-#myTopnav {
-  z-index: 10;
-}
-
-.main {
-  height: inherit;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  /* margin: 48px auto 0; */
-  margin: 4em auto 0;
-  padding: 1em 5em;
-  background-color: white;/* #1ab372; */
-  min-height: calc(100% - 6em);
-  z-index: 0;
-  max-width: 800px;
-}
-
-.tabcontent {
-  display: none;
-}
-
-.content > div > p {
-  font-size: 1.5em;
+  height: 100%;
   text-align: justify;
+  font-size: min(max(18px, 3vw), 30px);
 }
 
-.content > div > h1 {
-  font-size: 3em;
+.nightmode {
+  background-color: black;
+  color: white;
+}
+
+body {
+  max-width: calc(25em);
+  margin: 0 auto;
+  
+}
+
+br {
+  margin-bottom: .1em;
+}
+
+#header {
+  width: calc(100% - (1em * 2));
+  font-weight: bold;
+  height: 1em;
+  padding: 0.7em 1em 0;
   text-align: center;
 }
 
-.content :first-child > p:first-child {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.invisible {
-  display: none;
-}
-
-/* Services Tab */
-#services .element {
-  font-size: 1.5em;
-}
-
-#services .element > img {
-  width: 3em;
-  height: 3em;
-  float: left;
-}
-
-#services .element > p {
-  margin-left: 4em;
+#text {
+  padding: 5px 1em 10px;
   text-align: justify;
 }
 
-#services > .wrapper > h1 {
-  font-size: 3em;
+.passage {
+  
+}
+
+.header.small {
+  padding: 0;
+  margin: .08em 0;
+  font-weight: normal;
+  direction: ltr;
+  text-transform: lowercase;
+  font-variant: small-caps;
   text-align: center;
+  font-size: .8em;
 }
 
-/* Contact Tab */
-#contact div {
-  font-size: 1.5em;  
+.chazzan::before {
+  font-size: .7em;
+  content: "\2756  ";
 }
 
-#contact div img {
-  width: 6em;
-  height: 6em;
-  float: left;
-}
-
-#contact div div {
-  margin-left: 6em;
-  text-align: justify;
-}
-
-/* #contact > .temp img {
-  width: 50px;
-  height: 50px;
-}
-
-#contact > .temp p {
-  margin-left: 4em;
-} */
